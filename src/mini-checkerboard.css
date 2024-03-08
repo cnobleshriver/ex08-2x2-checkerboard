@@ -1,3 +1,27 @@
 /** TODO #2: Application Interactivity. Add CSS rules for the 2x2 checkerboard application **/
 
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+}
 
+.grid-item {
+    width: 200px;
+    height: 200px;
+}
+
+.grid-item.black {
+    background-color: black;
+    color: black;
+  }
+  
+  .grid-item.white {
+    background-color: white;
+    color: white;
+  }
+
+.grid-item:hover{
+    background-color: red;
+    color: white;
+}
